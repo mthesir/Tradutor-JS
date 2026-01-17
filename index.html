@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tradutor JS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Tradutor JS</h1>
+    <h6>By Mdev.</h6>
+
+    <!-- Texto com microfone (não funcional) -->
+    <div class="input-wrapper">
+      <textarea id="text_input" placeholder="Digite o texto para traduzir"></textarea>
+      <button id="microfone" class="icon-btn">
+        <i class="fas fa-microphone"></i>
+      </button>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls">
+      <select id="idioma">
+        <option value="">Selecionar idioma</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+        <option value="pt">Português</option>
+      </select>
+
+      <button id="traduzir">
+        <i class="fas fa-arrow-right"></i> Traduzir
+      </button>
+    </div>
+
+    <!-- Saída de texto -->
+    <div class="output-wrapper">
+      <textarea id="text_output" placeholder="A tradução aparecerá aqui..." readonly></textarea>
+      <button id="copiar" class="icon-btn">
+        <i class="fas fa-copy"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Biblioteca franc (não funcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/franc-min@5.0.0/min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- By Mdev -->
